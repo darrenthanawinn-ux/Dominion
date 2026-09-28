@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DOMINION — Core Simulation Engine</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="scan"></div>
+<section id="title">
+<pre class="banner">██████╗  ██████╗ ███╗   ███╗██╗███╗   ██╗██╗ ██████╗ ███╗   ██╗
+██╔══██╗██╔═══██╗████╗ ████║██║████╗  ██║██║██╔═══██╗████╗  ██║
+██║  ██║██║   ██║██╔████╔██║██║██╔██╗ ██║██║██║   ██║██╔██╗ ██║
+██║  ██║██║   ██║██║╚██╔╝██║██║██║╚██╗██║██║██║   ██║██║╚██╗██║
+██████╔╝╚██████╔╝██║ ╚═╝ ██║██║██║ ╚████║██║╚██████╔╝██║ ╚████║
+╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝</pre>
+<p class="sub">CORE SIMULATION ENGINE v1.0 — Strategy &amp; Logistics, endless eras</p>
+<div class="setup">
+<h3>1 · Scenario Theme</h3><div id="themes" class="opts"></div>
+<h3>2 · Leader Name</h3><input id="lname" maxlength="24" placeholder="Enter your name" value="Vale">
+<h3>3 · Difficulty</h3><div id="diffs" class="opts"></div>
+<h3>4 · Advisor Personality</h3><div id="advs" class="opts"></div>
+<div class="row"><button id="begin" class="big">BEGIN SIMULATION</button><button id="cont" class="big alt">CONTINUE SAVED GAME</button></div>
+</div></section>
+<main id="game" hidden>
+<header><div id="hdr"></div><div class="tools"><button id="snd">🔊 Sound</button><button id="sv">Save</button><button id="dl">Export</button></div></header>
+<div class="cols">
+<div class="left"><div id="hud" class="panel"></div><div id="map" class="panel"></div><div id="atmo" class="panel"></div></div>
+<div class="right"><div id="sit" class="panel"></div><div id="acts" class="panel"></div></div>
+</div>
+<div class="panel"><div id="log"></div><form id="cmdf"><span>&gt;</span><input id="cmd" autocomplete="off" placeholder="Type HELP · SAVE SIMULATION · END TURN · 1/2/3 to answer events"></form></div>
+</main>
+<div id="over" hidden></div>
+<script src="game.js"></script></body></html>
